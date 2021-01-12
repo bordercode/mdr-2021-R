@@ -10,6 +10,10 @@ tags: ["R Markdown", "plot", "regression"]
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
+```{r }
+library(tidyverse)
+```
+
 > #### Programa: Maestría en Desarrollo Regional.
 > ##### **Semestre:** 1-2021
 > ##### **Horas:** 15. 
@@ -67,3 +71,183 @@ knitr::include_graphics("C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/pos
 knitr::include_graphics("C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post/temario2.jpg")
 ```
 
+
+#### Estrategias de aprendizaje utilizadas
+
+Presentación por parte del profesor. Instalación de software open source y  colaboración intergrupal con la solución de las asignaciones.
+
+#### Bibliografía
+
++	Peter Dalgaard. Introductory Statistics with R  Second Edition. Springer  2008.
+
++	The Art of Data Science A Guide for Anyone Who Works with Data. Roger D. Peng and Elizabeth Matsui. Leanpub.2015.
+
++	Wickham  Hadley. Elegant Graphics for Data Analysis, Springer.2009.
+
++	Wilkinson   Leland. The Grammar of Graphics, Second Edition. Springer. 2005.
+
++	Report Writing for Data Science in R. Roger D. Peng © 2015 - 2016 Roger D. Peng.
+
+***
+
+> ### Software Setup (Installation).
+
+![](/r.jpg)
+
+
+1. On wndows: [download](http://cran.cnr.berkeley.edu/)
+2. Mac [download](http://cran.cnr.berkeley.edu/)
+
+R studio 
+
+3. Windows and Mac [download](https://www.rstudio.com/products/rstudio/download/#download)
+
+![](/installrstudio.png) 
+
+### A. Nociones Teóricas
+
+#### 1. Procesos de análisis replicables.
+
+¿Qué son los procesos de análisis replicable?
+
+En la realización de análisis estadístico  partimos de una pregunta, generalmente un problema que deseamos resolver. Para resolverlo aplicamos una serie de técnicas para analizar información. Dos fases comunes en  este proceso son el **Analisis exploratorio de datos y el análisis inferencial**.   
+
+Una vez que recorremos este proceso y respondemos el questionamiento inicial, la evidencia aportada con el análisis estadístico involucra el surgimietno de nuevas preguntas.
+
+![](/q.jpeg){width=40%}
+
+
+Una característica de este proceso es que es iterativo, es realidad estamos frente a un proceso ciclo. El work flow se repite constantemente. 
+
+Sería muy interesante y valioso que los recursos invertidos en términos de tiempo para la solución de un problema pudiesen recurperarse, si, reutilizarse! 
+
+![](/recycle.png){width=40%}
+
+
+De esta forma optimizariamos el uso de nuestros recursos. 
+
+La forma de hacer este uso óptimo en términos de análisis estadístico de datos es utilizando proceso **replicables**.
+
+Piense en las operaciones que comunmente se hacen en *Excel* por ejemplo. Una vez que se finaliza con una estimación se guarda el archivo y cuando se require hacer un análisis nuevo se abre otro archivo a pesar de que se usan funciones similares para aproximar el cálculo se trabaja doble ya que no se tiene un registro que documente nuestro trabajo paso a paso.
+
+A media que se hacen análisis de mayor complejidad o con un volumen de datos de mayor escala, se hace evidente la necesidad de documentar el proceso de análisis para su repoducción futura. 
+
+El entorno de análisis con plataformas como **R studio** esta diseñado explicitamente para permitir la **replicabilidad** del proceso de análisis. 
+
+#### 1.2 RStudio vs. STATA, SPSS y EXCEL.
+
+![](/logos.jpeg){width=80%}
+
+La principal ventaja de **R** sobre otros paquetes disponibles en el mercado actualmente es la flexibilidad del entorno *OPEN SOURCE*. Una gran comunidad de usuarios, desarrolla y comparte las herramientas que integran R de foma contínua.
+
+Otra ventajas incluyen: 
+
++ Integración de código  (lenguaje R).
+    
++ Explicitamente incorpora la perspectiva de análisis estadístico y  permite la representación gráfica dinámica (ej. Shiny apps).
+    
++ Generación de reportes endiversos formatos, como HTML, PDF,etc.No solo word.
+
++ Manejo de grandes volumenes de datos (base de datos que contienen millones de registros (individuos, observaciones...)
+
++ Plataforma que permite  utilizar herramientaspara visualización (ej.paquete ggplot2)
+
+
+#### Ejemplos
+
+Ejemplo 1: **Series de tiempo**  facets.
+
+```{r, echo=TRUE}
+growth<-readRDS("sdr_gr08_16_Edos.rds")%>%
+  mutate(fecha=as.numeric(fecha))
+glimpse(growth)
+```
+
+```{r un plot}
+ggplot(growth, aes(x=fecha,  group=SDR, linetype=SDR)) +
+  geom_line(aes(y=rate))+
+  facet_wrap(~DESCRIP, nrow=6)+
+  geom_hline(yintercept = 0)+
+  labs(linetype="Tasas")+
+  ylab("Tasa de crecimiento 2008=0 (%)") +
+  xlab("Año")+
+  theme_bw()+theme(legend.position=c(.9,.01))+
+  scale_x_continuous(breaks=c(8, 10, 12, 14, 16))
+```
+**Ejemplo 2:** series de tiempo agrupadas por variable categórica   Cociente de localización.
+
+![](/Fig_gridNS.jpg){width=100%}
+
+Ejemplo 3: **Series de tiempo**  Precios de la mezcla Mexicana de Petróleo. 
+
+```{r,  echo=TRUE}
+oilbrent<-read.csv("Oil_brent.csv")
+oilb<-ts(oilbrent$brentp,start=c(2002),end=c(2014), frequency=365)
+
+plot(oilb)
+abline(reg=lm(oilb~time(oilb)))
+```
+
+**Ejemplo 4:** time series. Fluctuacione de temperatura. Ej. daily, monthly, year...
+
+```{r,echo=TRUE}
+library(astsa)
+plot(gtemp, type="o", ylab="Desviaciones de temperatura Global",xlab="año",col="red")
+```
+
+**Ejemplo 5:** time series Inflación (INPC BANXICO)
+
+
+```{r,echo=TRUE}
+inf<-read.csv("inf14ts.csv")
+infts<-ts(inf$SP1,start= c(1982,2),end=c(2015,1),frequency=12)
+i.ts<-window(infts,start= c(2001,1), end=c(2015,1))
+i.dif<-diff(log(i.ts), lag=12)*100
+plot(i.dif,col="blue")
+View(i.ts)
+```
+
+**Ejemplo 6** time series, Desempleo e inflación Mensual (INEGI)
+
+```{r, echo=TRUE}
+p70<-read.csv("i70inegi.CSV")
+i70ts<-ts(p70$inf235830,start= c(1970,1),end=c(2015,1),frequency=12)
+i<-window(i70ts,start= c(2001,1), end=c(2015,1))
+
+ur = read.csv("desempmx2001.csv",header = TRUE, stringsAsFactors = FALSE)
+ur.ts<-ts(data=ur$ur, frequency = 12, start=c(2001,1),end=c(2014,12))
+urinfla.mts = cbind(ur.ts, i)
+plot(ur.ts)
+plot(i70ts)
+plot(urinfla.mts,col=c("blue", "red"),lty=1:2)
+plot(urinfla.mts, plot.type="single", main="Inflación y desempleo mensual",ylab="%",col=c("blue", "red"),lty=1:2)
+```
+
+**Ejemplo 7**. Scatter plot, 3 variables: *factors to  color and size 
+
+![](/LQ_rin_ZM.jpg)
+
+**Ejemplo 8**. Scatter plot Health data, 3 variables: *factors to  color and size 
+
+![](/Tasa_mor_15_rinitis.jpg)
+
+**Ejemplo 9**. Scatter plot Health data, 3 variables: *factors to  color and size 
+
+![](/LQ_rin_ZM09-15.jpg)
+
+**Ejemplo 10**. Scatter con regression line, 
+
+![](/Clues_size_lQ.jpg)
+
+**Ejemplo 11**. Boxplot con variable factorial. 
+
+![](/DGO_bxplot_Tmin.jpg)
+**Asignacion 1**  (On class reading): Leer  History and Overview of R. Páginas 4 a 10 del libro:
+
+R Programming for Data Science. [Libro](https://www.cs.upc.edu/~robert/teaching/estadistica/rprogramming.pdf)
+
+
+
+
+
+  

@@ -8,6 +8,21 @@ tags: ["R Markdown", "plot", "regression"]
 
 
 
+<pre class="r"><code>library(tidyverse)
+## Warning: package &#39;tidyverse&#39; was built under R version 3.5.3
+## -- Attaching packages -------------------------------------------------------------- tidyverse 1.3.0 --
+## v ggplot2 3.3.0     v purrr   0.3.3
+## v tibble  3.0.1     v dplyr   0.8.3
+## v tidyr   1.0.2     v stringr 1.4.0
+## v readr   1.3.1     v forcats 0.4.0
+## Warning: package &#39;ggplot2&#39; was built under R version 3.5.3
+## Warning: package &#39;tibble&#39; was built under R version 3.5.3
+## Warning: package &#39;tidyr&#39; was built under R version 3.5.3
+## Warning: package &#39;purrr&#39; was built under R version 3.5.3
+## Warning: package &#39;dplyr&#39; was built under R version 3.5.3
+## -- Conflicts ----------------------------------------------------------------- tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
 <blockquote>
 <h4 id="programa-maestría-en-desarrollo-regional.">Programa: Maestría en Desarrollo Regional.</h4>
 <h5 id="semestre-1-2021"><strong>Semestre:</strong> 1-2021</h5>
@@ -44,4 +59,139 @@ Trabajo colaborativo.</p>
 <p><img src="temario1.jpg" /></p>
 <p><img src="temario1.jpg" width="660" /></p>
 <p><img src="temario2.jpg" width="660" /></p>
+<div id="estrategias-de-aprendizaje-utilizadas" class="section level4">
+<h4>Estrategias de aprendizaje utilizadas</h4>
+<p>Presentación por parte del profesor. Instalación de software open source y colaboración intergrupal con la solución de las asignaciones.</p>
+</div>
+<div id="bibliografía" class="section level4">
+<h4>Bibliografía</h4>
+<ul>
+<li><p>Peter Dalgaard. Introductory Statistics with R Second Edition. Springer 2008.</p></li>
+<li><p>The Art of Data Science A Guide for Anyone Who Works with Data. Roger D. Peng and Elizabeth Matsui. Leanpub.2015.</p></li>
+<li><p>Wickham Hadley. Elegant Graphics for Data Analysis, Springer.2009.</p></li>
+<li><p>Wilkinson Leland. The Grammar of Graphics, Second Edition. Springer. 2005.</p></li>
+<li><p>Report Writing for Data Science in R. Roger D. Peng © 2015 - 2016 Roger D. Peng.</p></li>
+</ul>
+<hr />
+<blockquote>
+<h3 id="software-setup-installation.">Software Setup (Installation).</h3>
+</blockquote>
+<p><img src="/r.jpg" /></p>
+<ol style="list-style-type: decimal">
+<li>On wndows: <a href="http://cran.cnr.berkeley.edu/">download</a></li>
+<li>Mac <a href="http://cran.cnr.berkeley.edu/">download</a></li>
+</ol>
+<p>R studio</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Windows and Mac <a href="https://www.rstudio.com/products/rstudio/download/#download">download</a></li>
+</ol>
+<p><img src="/installrstudio.png" /></p>
+</div>
+</div>
+<div id="a.-nociones-teóricas" class="section level3">
+<h3>A. Nociones Teóricas</h3>
+<div id="procesos-de-análisis-replicables." class="section level4">
+<h4>1. Procesos de análisis replicables.</h4>
+<p>¿Qué son los procesos de análisis replicable?</p>
+<p>En la realización de análisis estadístico partimos de una pregunta, generalmente un problema que deseamos resolver. Para resolverlo aplicamos una serie de técnicas para analizar información. Dos fases comunes en este proceso son el <strong>Analisis exploratorio de datos y el análisis inferencial</strong>.</p>
+<p>Una vez que recorremos este proceso y respondemos el questionamiento inicial, la evidencia aportada con el análisis estadístico involucra el surgimietno de nuevas preguntas.</p>
+<p><img src="/q.jpeg" style="width:40.0%" /></p>
+<p>Una característica de este proceso es que es iterativo, es realidad estamos frente a un proceso ciclo. El work flow se repite constantemente.</p>
+<p>Sería muy interesante y valioso que los recursos invertidos en términos de tiempo para la solución de un problema pudiesen recurperarse, si, reutilizarse!</p>
+<p><img src="/recycle.png" style="width:40.0%" /></p>
+<p>De esta forma optimizariamos el uso de nuestros recursos.</p>
+<p>La forma de hacer este uso óptimo en términos de análisis estadístico de datos es utilizando proceso <strong>replicables</strong>.</p>
+<p>Piense en las operaciones que comunmente se hacen en <em>Excel</em> por ejemplo. Una vez que se finaliza con una estimación se guarda el archivo y cuando se require hacer un análisis nuevo se abre otro archivo a pesar de que se usan funciones similares para aproximar el cálculo se trabaja doble ya que no se tiene un registro que documente nuestro trabajo paso a paso.</p>
+<p>A media que se hacen análisis de mayor complejidad o con un volumen de datos de mayor escala, se hace evidente la necesidad de documentar el proceso de análisis para su repoducción futura.</p>
+<p>El entorno de análisis con plataformas como <strong>R studio</strong> esta diseñado explicitamente para permitir la <strong>replicabilidad</strong> del proceso de análisis.</p>
+</div>
+<div id="rstudio-vs.-stata-spss-y-excel." class="section level4">
+<h4>1.2 RStudio vs. STATA, SPSS y EXCEL.</h4>
+<p><img src="/logos.jpeg" style="width:80.0%" /></p>
+<p>La principal ventaja de <strong>R</strong> sobre otros paquetes disponibles en el mercado actualmente es la flexibilidad del entorno <em>OPEN SOURCE</em>. Una gran comunidad de usuarios, desarrolla y comparte las herramientas que integran R de foma contínua.</p>
+<p>Otra ventajas incluyen:</p>
+<ul>
+<li><p>Integración de código (lenguaje R).</p></li>
+<li><p>Explicitamente incorpora la perspectiva de análisis estadístico y permite la representación gráfica dinámica (ej. Shiny apps).</p></li>
+<li><p>Generación de reportes endiversos formatos, como HTML, PDF,etc.No solo word.</p></li>
+<li><p>Manejo de grandes volumenes de datos (base de datos que contienen millones de registros (individuos, observaciones…)</p></li>
+<li><p>Plataforma que permite utilizar herramientaspara visualización (ej.paquete ggplot2)</p></li>
+</ul>
+</div>
+<div id="ejemplos" class="section level4">
+<h4>Ejemplos</h4>
+<p>Ejemplo 1: <strong>Series de tiempo</strong> facets.</p>
+<pre class="r"><code>growth&lt;-readRDS(&quot;sdr_gr08_16_Edos.rds&quot;)%&gt;%
+  mutate(fecha=as.numeric(fecha))
+glimpse(growth)
+## Rows: 576
+## Columns: 8
+## $ ENT_NACM &lt;fct&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,...
+## $ sdr      &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0...
+## $ fecha    &lt;dbl&gt; 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8...
+## $ casos    &lt;int&gt; 22533, 23514, 6693, 13072, 55726, 9557, 76656, 44861, 1934...
+## $ logs     &lt;dbl&gt; 10.022736, 10.065351, 8.808817, 9.478228, 10.928202, 9.165...
+## $ rate     &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0...
+## $ DESCRIP  &lt;fct&gt; AGS, Baja California, BCS, Campeche, Coahuila , Colima, Ch...
+## $ SDR      &lt;chr&gt; &quot;otras&quot;, &quot;otras&quot;, &quot;otras&quot;, &quot;otras&quot;, &quot;otras&quot;, &quot;otras&quot;, &quot;otr...</code></pre>
+<pre class="r"><code>ggplot(growth, aes(x=fecha,  group=SDR, linetype=SDR)) +
+  geom_line(aes(y=rate))+
+  facet_wrap(~DESCRIP, nrow=6)+
+  geom_hline(yintercept = 0)+
+  labs(linetype=&quot;Tasas&quot;)+
+  ylab(&quot;Tasa de crecimiento 2008=0 (%)&quot;) +
+  xlab(&quot;Año&quot;)+
+  theme_bw()+theme(legend.position=c(.9,.01))+
+  scale_x_continuous(breaks=c(8, 10, 12, 14, 16))</code></pre>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/un%20plot-1.png" width="672" />
+<strong>Ejemplo 2:</strong> series de tiempo agrupadas por variable categórica Cociente de localización.</p>
+<p><img src="/Fig_gridNS.jpg" style="width:100.0%" /></p>
+<p>Ejemplo 3: <strong>Series de tiempo</strong> Precios de la mezcla Mexicana de Petróleo.</p>
+<pre class="r"><code>oilbrent&lt;-read.csv(&quot;Oil_brent.csv&quot;)
+oilb&lt;-ts(oilbrent$brentp,start=c(2002),end=c(2014), frequency=365)
+
+plot(oilb)
+abline(reg=lm(oilb~time(oilb)))</code></pre>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><strong>Ejemplo 4:</strong> time series. Fluctuacione de temperatura. Ej. daily, monthly, year…</p>
+<pre class="r"><code>library(astsa)
+plot(gtemp, type=&quot;o&quot;, ylab=&quot;Desviaciones de temperatura Global&quot;,xlab=&quot;año&quot;,col=&quot;red&quot;)</code></pre>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><strong>Ejemplo 5:</strong> time series Inflación (INPC BANXICO)</p>
+<pre class="r"><code>inf&lt;-read.csv(&quot;inf14ts.csv&quot;)
+infts&lt;-ts(inf$SP1,start= c(1982,2),end=c(2015,1),frequency=12)
+i.ts&lt;-window(infts,start= c(2001,1), end=c(2015,1))
+i.dif&lt;-diff(log(i.ts), lag=12)*100
+plot(i.dif,col=&quot;blue&quot;)</code></pre>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<pre class="r"><code>View(i.ts)</code></pre>
+<p><strong>Ejemplo 6</strong> time series, Desempleo e inflación Mensual (INEGI)</p>
+<pre class="r"><code>p70&lt;-read.csv(&quot;i70inegi.CSV&quot;)
+i70ts&lt;-ts(p70$inf235830,start= c(1970,1),end=c(2015,1),frequency=12)
+i&lt;-window(i70ts,start= c(2001,1), end=c(2015,1))
+
+ur = read.csv(&quot;desempmx2001.csv&quot;,header = TRUE, stringsAsFactors = FALSE)
+ur.ts&lt;-ts(data=ur$ur, frequency = 12, start=c(2001,1),end=c(2014,12))
+urinfla.mts = cbind(ur.ts, i)
+plot(ur.ts)</code></pre>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<pre class="r"><code>plot(i70ts)</code></pre>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-8-2.png" width="672" /></p>
+<pre class="r"><code>plot(urinfla.mts,col=c(&quot;blue&quot;, &quot;red&quot;),lty=1:2)</code></pre>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-8-3.png" width="672" /></p>
+<pre class="r"><code>plot(urinfla.mts, plot.type=&quot;single&quot;, main=&quot;Inflación y desempleo mensual&quot;,ylab=&quot;%&quot;,col=c(&quot;blue&quot;, &quot;red&quot;),lty=1:2)</code></pre>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-8-4.png" width="672" /></p>
+<p><strong>Ejemplo 7</strong>. Scatter plot, 3 variables: *factors to color and size</p>
+<p><img src="/LQ_rin_ZM.jpg" /></p>
+<p><strong>Ejemplo 8</strong>. Scatter plot Health data, 3 variables: *factors to color and size</p>
+<p><img src="/Tasa_mor_15_rinitis.jpg" /></p>
+<p><strong>Ejemplo 9</strong>. Scatter plot Health data, 3 variables: *factors to color and size</p>
+<p><img src="/LQ_rin_ZM09-15.jpg" /></p>
+<p><strong>Ejemplo 10</strong>. Scatter con regression line,</p>
+<p><img src="/Clues_size_lQ.jpg" /></p>
+<p><strong>Ejemplo 11</strong>. Boxplot con variable factorial.</p>
+<p><img src="/DGO_bxplot_Tmin.jpg" />
+<strong>Asignacion 1</strong> (On class reading): Leer History and Overview of R. Páginas 4 a 10 del libro:</p>
+<p>R Programming for Data Science. <a href="https://www.cs.upc.edu/~robert/teaching/estadistica/rprogramming.pdf">Libro</a></p>
+</div>
 </div>

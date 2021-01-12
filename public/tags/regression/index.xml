@@ -17,8 +17,7 @@
       <pubDate>Sun, 10 Jan 2021 21:13:14 -0500</pubDate>
       
       <guid>/2015-07-23-r-rmarkdown/</guid>
-      <description>Programa: Maestría en Desarrollo Regional.Semestre: 1-2021Horas: 15.Organización por sesiones: 5 Sesiones, 3 horas por sesión.Curso-intersemestral: Herramientas para Análisis estadístico: Implementación en R markdown.Presentación del curso.El curso está diseñado para estudiar el uso de herramientas de análisis de datos en un entorno replicable con base en R markdown.
-La orientación empírica se enfoca en la evaluación de indicadores a escaka regional en México.</description>
+      <description>library(tidyverse)## Warning: package &amp;#39;tidyverse&amp;#39; was built under R version 3.5.3## -- Attaching packages -------------------------------------------------------------- tidyverse 1.3.0 --## v ggplot2 3.3.0 v purrr 0.3.3## v tibble 3.0.1 v dplyr 0.8.3## v tidyr 1.0.2 v stringr 1.4.0## v readr 1.3.1 v forcats 0.4.0## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.5.3## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.5.3## Warning: package &amp;#39;tidyr&amp;#39; was built under R version 3.</description>
     </item>
     
   </channel>
