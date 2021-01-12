@@ -67,6 +67,3 @@ knitr::include_graphics("C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/pos
 knitr::include_graphics("C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post/temario2.jpg")
 ```
 
-
-
-```
