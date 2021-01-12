@@ -51,4 +51,17 @@ El curso intersemestral da soporte a la formación en métodos cuantitativos par
 
 ### Programa
 
+**Estructura del curso**
+[Temas](https://drive.google.com/file/d/1MD3epVmJq5pO5QssWRxEph3aEsJ_cAXB/view?usp=sharing)
+
+```{r, fig.width = 10, fig.height = 6, echo=FALSE}
+knitr::include_graphics("C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post/cayman-typography/temario1.jpg")
+```
+
+
+
+```{r, fig.width = 10, fig.height = 6, echo=FALSE}
+knitr::include_graphics("C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post/cayman-typography/temario2.jpg")
+```
+
 ```
