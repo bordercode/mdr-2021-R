@@ -6,6 +6,7 @@ categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
 ---
 
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
 ```
@@ -244,6 +245,8 @@ plot(urinfla.mts, plot.type="single", main="Inflación y desempleo mensual",ylab
 **Ejemplo 11**. Boxplot con variable factorial. 
 
 ![](C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post//DGO_bxplot_Tmin.jpg)
+
+
 **Asignacion 1**  (On class reading): Leer  History and Overview of R. Páginas 4 a 10 del libro:
 
 R Programming for Data Science. [Libro](https://www.cs.upc.edu/~robert/teaching/estadistica/rprogramming.pdf)
