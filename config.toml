@@ -1,7 +1,7 @@
-baseURL = "https://mdr-2021-r.netlify.app/"
+baseURL = "https://mdr-2021-r.netlify.app/"  
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "Cayman"
+title = "Maestría en Desarrollo Regional"
 theme = "cayman-hugo-theme"
 
 # Google analytics
@@ -22,15 +22,15 @@ pygmentsStyle = "pygments"
 
 [params]
   # Header text, can be markdown
-  project_name = "Cayman Hugo Theme"
-  project_tagline = "A clean, responsive Hugo theme, ported from the original Jekyll Cayman theme"
+  project_name = "Herramientas para análisis estadístico"
+  project_tagline = "Maesrtía en Desarrollo Regional: Curso Intersemestral 2021-1"
 
   # Date format for post list and single pages
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat = "2006-01-02"
 
   # Footer text, can be markdown
-  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/)."
+  footer = "Jose Luis Manzanares Rivera [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/)."
 
   # If true, the CSS/JS for Katex math typesetting are enabled
   katex = true
@@ -61,11 +61,11 @@ pygmentsStyle = "pygments"
 
 [menu]
   [[menu.nav]]
-    name = "Blog"
+    name = "Sesiones"
     url = "/"
     weight = 1
   [[menu.nav]]
-    name = "Tags"
+    name = "Estructura"
     url = "/tags/"
     weight = 2
   [[menu.nav]]

@@ -21,16 +21,16 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 
-  <title>Hello R Markdown | Cayman</title>
+  <title>Sesion 1 Introducción | Maestría en Desarrollo Regional</title>
 </head>
 
 <body>
   <section class="page-header">
   <h1 class="project-name">
-    Cayman Hugo Theme
+    Herramientas para análisis estadístico
   </h1>
   <h2 class="project-tagline">
-    A clean, responsive Hugo theme, ported from the original Jekyll Cayman theme
+    Maesrtía en Desarrollo Regional: Curso Intersemestral 2021-1
   </h2>
   <nav>
     
@@ -39,13 +39,13 @@
       
       
       
-      <a href="/" class="btn">Blog</a>
+      <a href="/" class="btn">Sesiones</a>
     
       
       
       
       
-      <a href="/tags/" class="btn">Tags</a>
+      <a href="/tags/" class="btn">Estructura</a>
     
       
       
@@ -64,10 +64,10 @@
 
   <section class="main-content">
     
-  <h1>Hello R Markdown</h1>
+  <h1>Sesion 1 Introducción</h1>
   <div>
     
-    <strong>Publish date: </strong>2015-07-23
+    <strong>Publish date: </strong>2021-01-10
   </div>
   
   
@@ -92,44 +92,38 @@
   
 
 
-<div id="r-markdown" class="section level1">
-<h1>R Markdown</h1>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>You can embed an R code chunk like this:</p>
-<pre class="r"><code>summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932</code></pre>
+<blockquote>
+<h4 id="programa-maestría-en-desarrollo-regional.">Programa: Maestría en Desarrollo Regional.</h4>
+<h5 id="semestre-1-2021"><strong>Semestre:</strong> 1-2021</h5>
+<h5 id="horas-15."><strong>Horas:</strong> 15.</h5>
+<h5 id="organización-por-sesiones-5-sesiones-3-horas-por-sesión."><strong>Organización por sesiones:</strong> 5 Sesiones, 3 horas por sesión.</h5>
+<h5 id="curso-intersemestral-herramientas-para-análisis-estadístico-implementación-en-r-markdown."><strong>Curso-intersemestral:</strong> Herramientas para Análisis estadístico: Implementación en R markdown.</h5>
+</blockquote>
+<div id="presentación-del-curso." class="section level3">
+<h3>Presentación del curso.</h3>
+<p>El curso está diseñado para estudiar el uso de herramientas de análisis de datos en un entorno replicable con base en R markdown.</p>
+<p>La orientación empírica se enfoca en la evaluación de indicadores a escaka regional en México.</p>
+<p><strong>Pre-requisitos</strong>. Conocimientos y habilidades necesarias:
+Es deseable contar con conocimientos previos de estadística básica y matemáticas básicas.
+Se require capacidad analítica y habilidades para el manejo de software.</p>
+<p><strong>Competencias a desarrollar:</strong> Análisis cuantitativo,
+Trabajo colaborativo.</p>
+<p><strong>Objetivo(s) general(es) de la asignatura:</strong> Dotar al alumno de Herramientas para llevar acabo manejo de datos bajo procesos de análisis replicable</p>
+<p>El curso intersemestral da soporte a la formación en métodos cuantitativos para las materias de estadistica, Economía regional y Técnicas de análisis regional durante el programa.</p>
+<p><strong>Cobertura de la asignatura:</strong> Cubre las bases sobre la aplicación de software estadístico. Conocer este potencial permitirá a los alumnos aprovechar de forma efectiva los conocimientos que ofrece este posgrado en cuanto a la realización de análisis estadístico así como dotarlos de capacidades para desarrollar sus proyectos de investigación. Se consideran herramientas de análisis basadas en software open source.</p>
+<p><strong>Requerimientos:</strong> Laptop, R, R-studio instalado.Este progrma tiene una licencia de acceso libre.
+<strong>R</strong> Es el software que aprenderemos a utilizar para esta clase.</p>
+<p><strong>Criterios de evaluación:</strong></p>
+<ul>
+<li>Participación colaborativa.</li>
+<li>Realización de ejercicios por sesión.</li>
+<li>Lecturas y análisis de datos extra clase.</li>
+</ul>
+<hr />
 </div>
-<div id="including-plots" class="section level1">
-<h1>Including Plots</h1>
-<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
-<pre class="r"><code>par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
-  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
-  init.angle = -50, border = NA
-)</code></pre>
-<div class="figure"><span id="fig:pie"></span>
-<img src="/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
-<p class="caption">
-Figure 1: A fancy pie chart.
-</p>
-</div>
+<div id="programa" class="section level3">
+<h3>Programa</h3>
+<p>```</p>
 </div>
 
   
@@ -140,7 +134,7 @@ Figure 1: A fancy pie chart.
 
     <footer class="site-footer">
   <span class="site-footer-credits">
-    Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/zwbetz-gh/cayman-hugo-theme">Cayman</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>.
+    Jose Luis Manzanares Rivera <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/zwbetz-gh/cayman-hugo-theme">Cayman</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>.
   </span>
 </footer>
 

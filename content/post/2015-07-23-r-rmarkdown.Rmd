@@ -1,7 +1,7 @@
 ---
-title: "Hello R Markdown"
-author: "Frida Gomam"
-date: 2015-07-23T21:13:14-05:00
+title: "Sesion 1 Introducción"
+author: "José Luis Manzanares Rivera"
+date: 2021-01-10T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
 ---
@@ -10,28 +10,45 @@ tags: ["R Markdown", "plot", "regression"]
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-# R Markdown
+> #### Programa: Maestría en Desarrollo Regional.
+> ##### **Semestre:** 1-2021
+> ##### **Horas:** 15. 
+> ##### **Organización por sesiones:** 5 Sesiones, 3 horas por sesión. 
+> ##### **Curso-intersemestral:** Herramientas para Análisis estadístico: Implementación en R markdown.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+### Presentación del curso.
 
-You can embed an R code chunk like this:
+El curso está diseñado para estudiar el uso de herramientas de análisis de datos en un entorno replicable con base en R markdown.
 
-```{r cars}
-summary(cars)
-fit <- lm(dist ~ speed, data = cars)
-fit
-```
+La orientación empírica se enfoca en la evaluación de indicadores  a escaka regional en México.
 
-# Including Plots
+**Pre-requisitos**. Conocimientos y habilidades necesarias:
+Es deseable contar con conocimientos previos de estadística básica y matemáticas básicas.
+Se require capacidad analítica y habilidades para el manejo de software.
 
-You can also embed plots. See Figure \@ref(fig:pie) for example:
+**Competencias a desarrollar:** Análisis cuantitativo,
+Trabajo colaborativo.
 
-```{r pie, fig.cap='A fancy pie chart.', tidy=FALSE}
-par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c('Sky', 'Sunny side of pyramid', 'Shady side of pyramid'),
-  col = c('#0292D8', '#F7EA39', '#C4B632'),
-  init.angle = -50, border = NA
-)
+**Objetivo(s) general(es) de la asignatura:** Dotar al alumno de  Herramientas  para llevar acabo manejo de datos bajo procesos de análisis replicable 
+
+El curso intersemestral da soporte a la formación en métodos cuantitativos para las materias de estadistica, Economía regional y Técnicas de análisis regional  durante el programa. 
+
+
+**Cobertura de la asignatura:** Cubre las bases sobre la aplicación de software estadístico. Conocer este potencial permitirá a los alumnos aprovechar de forma efectiva los conocimientos que ofrece este posgrado en cuanto a la realización de análisis  estadístico así como dotarlos de capacidades para desarrollar sus proyectos de investigación. Se consideran herramientas de análisis basadas en  software open source.   
+
+
+
+**Requerimientos:**  Laptop,  R, R-studio instalado.Este progrma tiene una licencia de acceso libre. 
+**R** Es el software que aprenderemos a utilizar para esta clase. 
+
+**Criterios de evaluación:**
+
++ Participación colaborativa. 
++ Realización de ejercicios por sesión.
++ Lecturas y análisis de datos extra clase.
+
+*** 
+
+### Programa
+
 ```

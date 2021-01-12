@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Cayman</title>
+    <title>Posts on Maestría en Desarrollo Regional</title>
     <link>/post/</link>
-    <description>Recent content in Posts on Cayman</description>
+    <description>Recent content in Posts on Maestría en Desarrollo Regional</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Jan 2021 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sesion 1 Introducción</title>
+      <link>/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Sun, 10 Jan 2021 21:13:14 -0500</pubDate>
+      
+      <guid>/2015-07-23-r-rmarkdown/</guid>
+      <description>Programa: Maestría en Desarrollo Regional.Semestre: 1-2021Horas: 15.Organización por sesiones: 5 Sesiones, 3 horas por sesión.Curso-intersemestral: Herramientas para Análisis estadístico: Implementación en R markdown.Presentación del curso.El curso está diseñado para estudiar el uso de herramientas de análisis de datos en un entorno replicable con base en R markdown.
+La orientación empírica se enfoca en la evaluación de indicadores a escaka regional en México.</description>
+    </item>
     
     <item>
       <title>Cayman Typography</title>
@@ -42,17 +52,6 @@ Block math: $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$ Bl
       <guid>/nasa-images/</guid>
       <description>The below images are from the NASA Image and Video Library &amp;ndash; indulge yourself, revel in their beauty. Also, the built-in figure shortcode is shown for each image.
  {{&amp;lt; figure img=&amp;quot;sun.jpg&amp;quot; caption=&amp;quot;The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, with internal convective motion that generates a magnetic field via a dynamo process. It is by far the most important source of energy for life on Earth.</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/2015-07-23-r-rmarkdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
     </item>
     
     <item>
