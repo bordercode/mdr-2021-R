@@ -1,9 +1,12 @@
 ---
 title: "Sesion 1 Introducción"
 author: "José Luis Manzanares Rivera"
-date: 2021-01-10T21:13:14-05:00
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
+date: '2021-01-10T21:13:14-05:00'
+tags:
+- R Markdown
+- plot
+- regression
+categories: R
 ---
 
 
@@ -15,11 +18,13 @@ knitr::opts_chunk$set(collapse = TRUE)
 library(tidyverse)
 ```
 
+
 > #### Programa: Maestría en Desarrollo Regional.
 > ##### **Semestre:** 1-2021
 > ##### **Horas:** 15. 
 > ##### **Organización por sesiones:** 5 Sesiones, 3 horas por sesión. 
 > ##### **Curso-intersemestral:** Herramientas para Análisis estadístico: Implementación en R markdown.
+
 
 ### Presentación del curso.
 
