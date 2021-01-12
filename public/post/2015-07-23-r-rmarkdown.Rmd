@@ -53,6 +53,7 @@ El curso intersemestral da soporte a la formación en métodos cuantitativos par
 
 *** 
 
+
 ### Programa
 
 **Estructura del curso**
@@ -60,6 +61,7 @@ El curso intersemestral da soporte a la formación en métodos cuantitativos par
 
 
 ![](C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post/temario1.jpg)
+
 
 ```{r, fig.width = 10, fig.height = 6, echo=FALSE}
 knitr::include_graphics("C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post/temario1.jpg")
