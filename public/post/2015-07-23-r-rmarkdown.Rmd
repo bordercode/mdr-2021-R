@@ -92,7 +92,7 @@ Presentación por parte del profesor. Instalación de software open source y  co
 
 > ### Software Setup (Installation).
 
-![](/r.jpg)
+![](C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post//r.jpg)
 
 
 1. On wndows: [download](http://cran.cnr.berkeley.edu/)
@@ -102,7 +102,7 @@ R studio
 
 3. Windows and Mac [download](https://www.rstudio.com/products/rstudio/download/#download)
 
-![](/installrstudio.png) 
+![](C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post//installrstudio.png) 
 
 ### A. Nociones Teóricas
 
@@ -114,14 +114,14 @@ En la realización de análisis estadístico  partimos de una pregunta, generalm
 
 Una vez que recorremos este proceso y respondemos el questionamiento inicial, la evidencia aportada con el análisis estadístico involucra el surgimietno de nuevas preguntas.
 
-![](/q.jpeg){width=40%}
+![](C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post//q.jpeg){width=40%}
 
 
 Una característica de este proceso es que es iterativo, es realidad estamos frente a un proceso ciclo. El work flow se repite constantemente. 
 
 Sería muy interesante y valioso que los recursos invertidos en términos de tiempo para la solución de un problema pudiesen recurperarse, si, reutilizarse! 
 
-![](/recycle.png){width=40%}
+![](C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post//recycle.png){width=40%}
 
 
 De esta forma optimizariamos el uso de nuestros recursos. 
@@ -136,7 +136,7 @@ El entorno de análisis con plataformas como **R studio** esta diseñado explici
 
 #### 1.2 RStudio vs. STATA, SPSS y EXCEL.
 
-![](/logos.jpeg){width=80%}
+![](C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post/logos.jpeg){width=80%}
 
 La principal ventaja de **R** sobre otros paquetes disponibles en el mercado actualmente es la flexibilidad del entorno *OPEN SOURCE*. Una gran comunidad de usuarios, desarrolla y comparte las herramientas que integran R de foma contínua.
 
@@ -176,7 +176,7 @@ ggplot(growth, aes(x=fecha,  group=SDR, linetype=SDR)) +
 ```
 **Ejemplo 2:** series de tiempo agrupadas por variable categórica   Cociente de localización.
 
-![](/Fig_gridNS.jpg){width=100%}
+![](C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post//Fig_gridNS.jpg){width=100%}
 
 Ejemplo 3: **Series de tiempo**  Precios de la mezcla Mexicana de Petróleo. 
 
@@ -225,23 +225,23 @@ plot(urinfla.mts, plot.type="single", main="Inflación y desempleo mensual",ylab
 
 **Ejemplo 7**. Scatter plot, 3 variables: *factors to  color and size 
 
-![](/LQ_rin_ZM.jpg)
+![](C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post//LQ_rin_ZM.jpg)
 
 **Ejemplo 8**. Scatter plot Health data, 3 variables: *factors to  color and size 
 
-![](/Tasa_mor_15_rinitis.jpg)
+![](C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post//Tasa_mor_15_rinitis.jpg)
 
 **Ejemplo 9**. Scatter plot Health data, 3 variables: *factors to  color and size 
 
-![](/LQ_rin_ZM09-15.jpg)
+![](C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post/LQ_rin_ZM09-15.jpg)
 
 **Ejemplo 10**. Scatter con regression line, 
 
-![](/Clues_size_lQ.jpg)
+![](C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post/Clues_size_lQ.jpg)
 
 **Ejemplo 11**. Boxplot con variable factorial. 
 
-![](/DGO_bxplot_Tmin.jpg)
+![](C:/Users/LENOVO/Desktop/DESK/web/mdr-2021-R/content/post//DGO_bxplot_Tmin.jpg)
 **Asignacion 1**  (On class reading): Leer  History and Overview of R. Páginas 4 a 10 del libro:
 
 R Programming for Data Science. [Libro](https://www.cs.upc.edu/~robert/teaching/estadistica/rprogramming.pdf)
